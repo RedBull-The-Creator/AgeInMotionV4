@@ -75,7 +75,7 @@ public class AgeWidgetProvider extends AppWidgetProvider {
     }
 
     private static ZonedDateTime CalendarToZoned(long millis, ZoneId zone) {
-        Calendar c = Calendar.getInstance(zone);
+        Calendar c = Calendar.getInstance(java.util.TimeZone.getTimeZone(zone));
         c.setTimeInMillis(millis);
         LocalDate d = LocalDate.of(c.get(Calendar.YEAR), c.get(Calendar.MONTH)+1, c.get(Calendar.DAY_OF_MONTH));
         return d.atStartOfDay(zone);
