@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">progress day</string>
+    <string name="widget_name">progress day</string>
+    <string name="configure_title">progress day</string>
+    <string name="dob_label">Date of birth</string>
+    <string name="lifespan_label">Expected lifespan</string>
+    <string name="mode_label">Widget style</string>
+    <string name="mode_original">Original counter</string>
+    <string name="mode_progress">Today in motion</string>
+    <string name="save">Save</string>
+</resources>

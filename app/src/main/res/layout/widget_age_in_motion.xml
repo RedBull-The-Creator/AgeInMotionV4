@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="6dp"
+    android:gravity="center_vertical"
+    android:background="@drawable/widget_bg">
+
+    <TextView android:id="@+id/age" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="26.277008819" android:textColor="#FFFFFF" android:textSize="22sp" android:fontFamily="sans"
+        android:gravity="center_vertical" android:maxLines="1" android:includeFontPadding="false" android:ellipsize="end" />
+    <TextView android:id="@+id/unit" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:text="YEARS" android:textColor="#9A9A9A" android:textSize="7sp" android:letterSpacing="0.22"
+        android:includeFontPadding="false" android:paddingTop="2dp" />
+
+    <LinearLayout android:id="@+id/progress_area" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:visibility="gone" android:paddingTop="5dp">
+        <LinearLayout android:id="@+id/progress_segments" android:layout_width="match_parent" android:layout_height="7dp"
+            android:orientation="horizontal" android:gravity="center_vertical" />
+        <TextView android:id="@+id/percent" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="right" android:text="67.75%" android:textColor="#8E8E8E" android:textSize="7sp"
+            android:includeFontPadding="false" android:paddingTop="2dp" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/progress_detail_grid" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:visibility="gone" android:paddingTop="4dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/p1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="16" android:textColor="#FFFFFF" android:textSize="12sp" android:includeFontPadding="false"/>
+            <TextView android:id="@+id/pl1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="HOURS" android:textColor="#8E8E8E" android:textSize="6sp" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <View android:layout_width="1dp" android:layout_height="22dp" android:background="#333333" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:paddingLeft="8dp">
+            <TextView android:id="@+id/p2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="15" android:textColor="#FFFFFF" android:textSize="12sp" android:includeFontPadding="false"/>
+            <TextView android:id="@+id/pl2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MINUTES" android:textColor="#8E8E8E" android:textSize="6sp" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <View android:layout_width="1dp" android:layout_height="22dp" android:background="#333333" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:paddingLeft="8dp">
+            <TextView android:id="@+id/p3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="42" android:textColor="#FFFFFF" android:textSize="12sp" android:includeFontPadding="false"/>
+            <TextView android:id="@+id/pl3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="SECONDS" android:textColor="#8E8E8E" android:textSize="6sp" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <View android:layout_width="1dp" android:layout_height="22dp" android:background="#333333" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:paddingLeft="8dp">
+            <TextView android:id="@+id/p4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="318" android:textColor="#FFFFFF" android:textSize="12sp" android:includeFontPadding="false"/>
+            <TextView android:id="@+id/pl4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MILLISECONDS" android:textColor="#8E8E8E" android:textSize="6sp" android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/age_detail_grid" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="horizontal" android:visibility="gone" android:paddingTop="4dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+            <TextView android:id="@+id/d1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="26" android:textColor="#FFFFFF" android:textSize="12sp" android:includeFontPadding="false"/>
+            <TextView android:id="@+id/l1" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="YEARS" android:textColor="#8E8E8E" android:textSize="6sp" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <View android:layout_width="1dp" android:layout_height="22dp" android:background="#333333" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:paddingLeft="8dp">
+            <TextView android:id="@+id/d2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="3" android:textColor="#FFFFFF" android:textSize="12sp" android:includeFontPadding="false"/>
+            <TextView android:id="@+id/l2" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="MONTHS" android:textColor="#8E8E8E" android:textSize="6sp" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <View android:layout_width="1dp" android:layout_height="22dp" android:background="#333333" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:paddingLeft="8dp">
+            <TextView android:id="@+id/d3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="4" android:textColor="#FFFFFF" android:textSize="12sp" android:includeFontPadding="false"/>
+            <TextView android:id="@+id/l3" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="DAYS" android:textColor="#8E8E8E" android:textSize="6sp" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <View android:layout_width="1dp" android:layout_height="22dp" android:background="#333333" />
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical" android:paddingLeft="8dp">
+            <TextView android:id="@+id/d4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="6" android:textColor="#FFFFFF" android:textSize="12sp" android:includeFontPadding="false"/>
+            <TextView android:id="@+id/l4" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="HOURS" android:textColor="#8E8E8E" android:textSize="6sp" android:includeFontPadding="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView android:id="@+id/detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="TIME IS MOVING"
+        android:textColor="#FFFFFF" android:textSize="7sp" android:letterSpacing="0.12" android:includeFontPadding="false" android:paddingTop="4dp" />
+</LinearLayout>

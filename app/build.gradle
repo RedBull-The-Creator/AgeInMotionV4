@@ -1,0 +1,5 @@
+plugins { id 'com.android.application' }
+
+android { namespace 'com.farhaan.ageinmotion'; compileSdk 36
+    defaultConfig { applicationId 'com.farhaan.ageinmotion'; minSdk 26; targetSdk 36; versionCode 4; versionName '1.1' }
+}
